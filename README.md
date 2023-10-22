@@ -1,3 +1,4 @@
+### code
 ```js
   const root = document.getElementById("root");
       const first_h1_element = React.createElement( "h1",{ className: "parent-title" },"I am parent.");
@@ -13,6 +14,24 @@
 
       ReactDOM.render(element, root);
 ```
+
+### output
+```html
+<div id="root">
+  <div class="wapper">
+    <div class="parent">
+      <h1 class="parent-title">I am parent.</h1>
+      <p>Barir Korta</p>
+    </div>
+    <div class="parent-two">
+      <h1 class="parent-title">I am parent two.</h1>
+      <p>Barir Second Korta</p>
+   </div>
+ </div>
+</div>
+```
+
+
 
 ## Q1. What is the difference between a library and a framework?
 
