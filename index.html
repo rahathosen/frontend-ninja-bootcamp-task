@@ -17,36 +17,18 @@
   <body>
     <div id="root"></div>
     <script>
-      const first_h1_element = React.createElement(
-        "h1",
-        { className: "parent-title" },
-        "I am parent."
-      );
-      const second_h1_element = React.createElement(
-        "h1",
-        { className: "parent-title" },
-        "I am parent two."
-      );
-      const first_p_element = React.createElement("p", {}, "Barir Korta");
-      const second_p_element = React.createElement(
-        "p",
-        {},
-        "Barir Second Korta"
-      );
-      const element = React.createElement("div", { className: "wapper" }, [
-        React.createElement("div", { className: "parent" }, [
-          first_h1_element,
-          "",
-          first_p_element,
-        ]),
-        React.createElement("div", { className: "parent-two" }, [
-          second_h1_element,
-          "",
-          second_p_element,
-        ]),
-      ]);
-
       const root = document.getElementById("root");
+      const first_h1_element = React.createElement( "h1",{ className: "parent-title" },"I am parent.");
+      const second_h1_element = React.createElement( "h1",{ className: "parent-title" },"I am parent two.");
+      const first_p_element = React.createElement("p", {}, "Barir Korta");
+      const second_p_element = React.createElement("p",{},"Barir Second Korta");
+
+      const element = React.createElement("div", { className: "wapper" }, [
+        React.createElement("div", { className: "parent" }, [first_h1_element, "",first_p_element,]),
+        React.createElement("div", { className: "parent-two" }, [second_h1_element,"", second_p_element,]),
+        ]
+    );
+
       ReactDOM.render(element, root);
     </script>
   </body>
